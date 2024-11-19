@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <script type="text/javascript" src="js/ejercicioTablas.js"></script>
+
+</head>
+
+<body>
+    <article class="proyecto">
+        <header class="header">
+            <h2 class="titulo">Ejercicio de Tablas</h2>
+        </header>
+        <form class="form">
+            <div class="caja">
+                <span class="gear">S</span>
+                <select class="selector" id="opciones" name="opciones" onchange="mostrarTabla()">
+                        <option value="" disabled selected hidden>Selecciona</option>
+                        <option value="multiplicar7">Tabla del 7</option>
+                        <option value="suma5">Tabla del 5</option>
+                        <option value="potencia2">Tabla del 2</option>
+                        <option value="operaciones">Operaciones</option>
+                </select>
+            </div>
+        </form>
+        <div id="tabla">
+        </div>
+    </article>
+</body>
+</html>

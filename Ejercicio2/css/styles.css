@@ -1,0 +1,229 @@
+@font-face{
+    font-family: "TrebuchetMS";
+    src: url('fonts/TrebuchetMS.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "BebasNeue";
+    src: url('fonts/BebasNeue.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "WebSimbolsRegular";
+    src: url('fonts/websymbols-regular-webfont.eot');
+    src: url('fonts/websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/websymbols-regular-webfont.woff') format('woff'),
+         url('fonts/websymbols-regular-webfont.ttf') format('truetype'),
+         url('fonts/websymbols-regular-webfont.svg#WebSimbolsRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+*{
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    font-family: "BebasNeue";
+}
+
+body{
+    background-color: #3c927c;
+}
+
+
+
+.proyecto{
+    max-width: 33rem;
+    margin-top: 7rem;
+    margin-left: 6rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2rem;
+    display: grid;
+    justify-content: center;
+    grid-row-gap: 0rem;
+    background-color: #0f1424;
+    border-radius: 20px;
+    box-shadow: 0px 0px 100px 0px  #0f1424;
+}
+
+.header {
+    padding-bottom: 0.2rem;
+    border: 1px solid #202637;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: #070b14;
+    box-shadow: 0px 0px 50px -10px #070b14;
+}
+
+.titulo{
+    color: #d0d1d2;
+    font-size: 40px;
+    padding: 1rem 3rem 1rem 3rem;
+}
+
+
+
+.form{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
+    text-decoration: none;
+}
+
+.caja{
+    display: flex;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: #92483c;
+    box-shadow: 0px 0px 30px -12px  #92483c;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.caja:hover{
+    box-shadow: 0px 0px 20px #070b14;
+    background-color: #86923c;
+    color: #070b14;
+    transition: all 0.5;
+}
+
+.caja:hover .selector{
+    color: #070b14;
+}
+
+.caja :focus{
+    color: #080b15;
+}
+
+.caja .gear{
+    display: block;
+    align-self: center;
+    color: #d0d1d2;
+    padding-left: 1.2rem;
+    padding-bottom: 0.30rem;
+    font-size: 40px;
+    font-family: "WebSimbolsRegular";
+    animation-name: rotate-gear;
+    animation-duration: 2s; 
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotate-gear{
+    from{
+        transform-origin: center center;
+        transform: rotateZ(0deg)
+    }
+    to{
+        transform-origin: center center;
+        transform: rotateZ(360deg);
+    }
+}
+
+.caja:hover .gear{
+    animation: fromBellow 0.40s linear;
+    color: #070b14;
+}
+
+@keyframes fromBellow{
+    0%{
+        transform: translateY(0%);
+    }
+    50%{
+        transform: translateY(200%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+
+
+.selector{
+    overflow-wrap:break-word;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    font-size: 25px;
+    font-weight: bold;
+    float: right;
+    padding-left: 1.2rem;
+    padding-right: 2rem;
+    padding-bottom: 0.3rem;
+    text-align: center;
+    background-color: transparent;
+    color: #92483c;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    appearance: none;
+    cursor: pointer;
+    transition: all 0.5s ease;
+
+}
+
+.selector:hover{
+    transition: background-color 0.5s ease;
+    color: #070b14;
+
+}
+
+.caja:hover .selector{
+    animation: fromRight 200ms linear;
+}
+
+@keyframes fromRight{
+    from{
+        transform: translateX(200%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+
+.selector option{
+    background-color: #86923c;
+    color: #080b15;
+    font-size: large;
+    font-weight: 600;
+    text-align: left;
+    border-radius: 10px;
+}
+
+
+
+
+
+#tabla{
+    background-color: #070b14;
+    box-shadow: inset 0px 0px 50px -10px #080b15;
+    margin-top: 1rem;
+    border-radius: 10px;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px;
+    border: 1px solid #202637;
+    padding-bottom: 1rem.5;
+}
+
+h2{
+    font-style: italic;
+    color: #d0d1d2;
+    padding: 1.5rem;
+    padding-left: 3rem;
+}
+
+li{
+    font-style: italic;
+    list-style-type: none;
+    color: #d0d1d2;
+    appearance: none;
+    text-decoration: none;
+    padding-left: 4rem;
+    padding-bottom: 1rem;
+}
